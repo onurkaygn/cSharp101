@@ -6,8 +6,14 @@ namespace cSharp101
     {
         static void Main(string[] args)
         {
-            Console
-                .WriteLine("Hello");
+            int year = 1955;
+            string name = "Bill";
+            String surname = "Gates";
+            byte age = 67;
+            DateTime today = DateTime.Now;
+            Console.WriteLine("I am " + name + surname + " and my year of birth is " + year + " so my age is " + age + ".");
+            Console.WriteLine("Wow today is " + today);
+
         }
     }
 }
