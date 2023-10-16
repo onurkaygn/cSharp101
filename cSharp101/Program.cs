@@ -4,8 +4,11 @@ namespace cSharp101
 {
     class Program
     {
+
         static void Main(string[] args)
         {
+
+
             //Değişkenler ve Veri Tipleri
             int year = 1955;
             string name = "Bill";
@@ -50,9 +53,7 @@ namespace cSharp101
 
             Console.WriteLine("Enter a number between 1 and 5...");
             int yourNumberInput = Convert.ToInt32(Console.ReadLine());
-          
-          
-           
+     
                 switch(yourNumberInput)
                 {
                     case 1:
@@ -74,8 +75,48 @@ namespace cSharp101
                     Console.WriteLine( yourNumberInput + " is not a valid number.");
                     break;
                 }
-
+            //Döngüler
+            Console.WriteLine("Enter a number for even and odd counter...");
+            int userForInput = int.Parse(Console.ReadLine());
+            int evenCount = 0;
+            int oddCount = 0;
+            for (int i = 0; i < userForInput; i++)
+            {
+                if(i % 2 == 0)
+                {
+                    evenCount += 1;
+                }
+                else
+                {
+                    oddCount += 1;
+                }
             }
+            Console.WriteLine("There is a " + evenCount + " even number between 0 and " + userForInput);
+            Console.WriteLine("There is a " + oddCount + " odd number between 0 and " + userForInput);
+
+
+            Console.Write("Bir sayı girin: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            int sum = 0;
+            int counter = 1;
+
+            while (counter <= number)
+            {
+                sum += counter;
+                counter++;
+            }
+            Console.WriteLine("Sum of numbers between 0 and " + number + " is " + sum);
+
+
+            string[] brands = { "ASUS", "ViewSonic", "Samsung", "Lenovo" };
+
+            foreach(var brand in brands)
+            {
+                Console.WriteLine(brand);
+            }
+
+        }
 
         }
 
