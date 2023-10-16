@@ -22,7 +22,24 @@ namespace cSharp101
             int numberInt = 28;
             double numberDouble;
             numberDouble = numberInt;
-            
+            //Try Catch Finally ve Mantıksal Hatalar
+            try
+            {
+                Console.WriteLine("What is your name?");
+                int input = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Your name is: " + input);
+            }
+            catch(Exception ex) {
+                Console.WriteLine("Your exception is: " + ex.Message.ToString());
+
+            }
+           
+            finally
+            {
+                Console.WriteLine("Done!");
+            }
+
+          
 
         }
     }
