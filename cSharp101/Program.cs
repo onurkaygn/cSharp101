@@ -116,12 +116,18 @@ namespace cSharp101
             {
                 Console.WriteLine(brand);
             }
-            //Metotlar
+            //Metodlar
 
 
             int result = Topla(7, 2);
-            Console.WriteLine(result);
-        
+            Console.WriteLine("Girdiğiniz sayıların toplamı: " + result);
+
+            Calculations powerCalc = new();
+
+            Console.WriteLine(powerCalc.Expo(3, 4));
+            Console.WriteLine(powerCalc.Expo(2, 4));
+            Console.WriteLine(powerCalc.Expo(7, 2));
+
 
 
 
@@ -129,6 +135,16 @@ namespace cSharp101
         static int Topla(int number1, int number2)
         {
             return (number1 + number2);
+        }
+        public class Calculations
+        {
+           public int Expo(int number, int power)
+            {
+                if (power < 2) return number;
+                return Expo(number, power - 1) * number;
+
+            }
+
         }
     }
 
