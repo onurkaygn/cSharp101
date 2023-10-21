@@ -32,7 +32,8 @@ namespace cSharp101
                 int input = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Your favorite number is: " + input);
             }
-            catch(Exception ex) {
+            catch (Exception ex)
+            {
                 Console.WriteLine("Your exception is: " + ex.Message.ToString());
 
             }
@@ -42,7 +43,7 @@ namespace cSharp101
             }
             //Karar Yapıları
             int newDate = DateTime.Today.Year;
-            if(newDate == 2023)
+            if (newDate == 2023)
             {
                 Console.WriteLine("It's 2023!");
             }
@@ -53,28 +54,28 @@ namespace cSharp101
 
             Console.WriteLine("Enter a number between 1 and 5...");
             int yourNumberInput = Convert.ToInt32(Console.ReadLine());
-     
-                switch(yourNumberInput)
-                {
-                    case 1:
-                        Console.WriteLine("Your number is: " + yourNumberInput); 
-                        break;
-                    case 2:
-                        Console.WriteLine("Your number is: " + yourNumberInput);
-                        break;
-                    case 3:
-                        Console.WriteLine("Your number is: " + yourNumberInput);
-                        break;
-                    case 4:
-                        Console.WriteLine("Your number is: " + yourNumberInput);
-                        break;
-                    case 5:
-                        Console.WriteLine("Your number is: " + yourNumberInput);
-                        break;
-                        default:
-                    Console.WriteLine( yourNumberInput + " is not a valid number.");
+
+            switch (yourNumberInput)
+            {
+                case 1:
+                    Console.WriteLine("Your number is: " + yourNumberInput);
                     break;
-                }
+                case 2:
+                    Console.WriteLine("Your number is: " + yourNumberInput);
+                    break;
+                case 3:
+                    Console.WriteLine("Your number is: " + yourNumberInput);
+                    break;
+                case 4:
+                    Console.WriteLine("Your number is: " + yourNumberInput);
+                    break;
+                case 5:
+                    Console.WriteLine("Your number is: " + yourNumberInput);
+                    break;
+                default:
+                    Console.WriteLine(yourNumberInput + " is not a valid number.");
+                    break;
+            }
             //Döngüler
             Console.WriteLine("Enter a number for even and odd counter...");
             int userForInput = int.Parse(Console.ReadLine());
@@ -82,7 +83,7 @@ namespace cSharp101
             int oddCount = 0;
             for (int i = 0; i < userForInput; i++)
             {
-                if(i % 2 == 0)
+                if (i % 2 == 0)
                 {
                     evenCount += 1;
                 }
@@ -111,14 +112,25 @@ namespace cSharp101
 
             string[] brands = { "ASUS", "ViewSonic", "Samsung", "Lenovo" };
 
-            foreach(var brand in brands)
+            foreach (var brand in brands)
             {
                 Console.WriteLine(brand);
             }
+            //Metotlar
+
+
+            int result = Topla(7, 2);
+            Console.WriteLine(result);
+        
+
+
 
         }
-
+        static int Topla(int number1, int number2)
+        {
+            return (number1 + number2);
         }
+    }
 
 
 
