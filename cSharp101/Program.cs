@@ -7,7 +7,7 @@ namespace cSharp101
 
         static void Main(string[] args)
         {
-
+            /*
 
             //Değişkenler ve Veri Tipleri
             int year = 1955;
@@ -128,10 +128,95 @@ namespace cSharp101
             Console.WriteLine(powerCalc.Expo(2, 4));
             Console.WriteLine(powerCalc.Expo(7, 2));
 
+            //String Metodları
+            */
 
 
+            //Koleksiyonlar
+            List<int> numberList = new List<int>();
+            
+            numberList.Add(1);
+            numberList.Add(3);
+            numberList.Add(5);
+            numberList.Add(2);
+
+
+            List<string> colorList = new List<string>();
+
+            colorList.Add("Black");
+            colorList.Add("Yellow");
+            colorList.Add("Red");
+            colorList.Add("Green");
+            colorList.Add("Blue");
+            colorList.Add("Orange");
+            colorList.Add("Salmon");
+
+            Console.WriteLine(numberList.Count());
+            Console.WriteLine(colorList.Count());
+
+           
+            numberList.Remove(5);
+            colorList.RemoveAt(3);
+            foreach (var color in colorList)
+            {
+                Console.WriteLine(color);
+            }
+            numberList.ForEach(number => Console.WriteLine(number));
+
+            if(colorList.Contains("Yellow"))
+            {
+                Console.WriteLine("Yellow found!");
+            }
+
+            Console.WriteLine(numberList.BinarySearch(3));
+
+            string[] animals = { "Cat", "Dog", "Bird" };
+
+            List<string> animalList = new List<string>(animals);
+            Console.WriteLine(animalList[1]);
+
+            List<Users> userList = new List<Users>();
+            Users user1 = new Users();
+            user1.Name = "user1sName";
+            user1.Surname = "user1sSurname";
+            user1.Age = 21;
+
+            Users user2 = new Users();
+            user2.Name = "user2sName";
+            user2.Surname = "user2sSurname";
+            user2.Age = 20;
+
+            userList.Add(user1);
+            userList.Add(user2);
+
+            List<Users> newUserList = new List<Users>();
+
+            newUserList.Add(new Users()
+            {
+                Name = "newName",
+                Surname = "newSurname",
+                Age = 22
+            });
+
+            foreach(Users user in userList)
+            {
+                Console.WriteLine(user.Name);
+            }
 
         }
+
+      
+        public class Users
+        {
+            string name;
+            string surname;
+            private int age;
+
+            public string Name { get => name; set => name = value; }
+            public string Surname { get => surname; set => surname = value; }
+            public int Age { get => age; set => age = value; }
+        }
+
         static int Topla(int number1, int number2)
         {
             return (number1 + number2);
