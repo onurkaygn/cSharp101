@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections;
 
 namespace cSharp101
 {
     class Program
     {
+
 
         static void Main(string[] args)
         {
@@ -133,7 +135,7 @@ namespace cSharp101
 
 
             //Koleksiyonlar
-            List<int> numberList = new List<int>();
+           /* List<int> numberList = new List<int>();
             
             numberList.Add(1);
             numberList.Add(3);
@@ -203,9 +205,63 @@ namespace cSharp101
                 Console.WriteLine(user.Name);
             }
 
+            ArrayList list = new ArrayList();
+            list.Add("Ayşe");
+            list.Add(5);
+            list.Add(false);
+            list.Add('a');
+
+            Dictionary<string,string> employers = new Dictionary<string,string>();
+
+            employers.Add("C#", "Ali");
+            employers.Add("Swift", "Ahmet");
+            employers.Add("Angular", "Nur");
+            Console.WriteLine(employers["Angular"]); */
+
+
+            Employees employee1 = new Employees();
+
+            employee1.name = "TestName0";
+            employee1.surname = "TestSurname0";
+            employee1.id = 0;
+            employee1.department = "TestDepartment0";
+
+            Employees employee2 = new Employees();
+
+            employee2.name = "TestName1";
+            employee2.surname = "TestSurname1";
+            employee2.id = 1;
+            employee2.department = "TestDepartment1";
+
+            employee1.EmployeeInffo();
+
+
+
+
         }
 
-      
+
+
+        class Employees
+        {
+            public string name;
+            public string surname;
+            public int id;
+            public string department;
+
+            public void EmployeeInffo()
+            {
+                Console.WriteLine("Employee Name: {0}",name);
+                Console.WriteLine("Employee Surname: {0}", surname);
+                Console.WriteLine("Employee ID: {0}", id);
+                Console.WriteLine("Employee Department: {0}", department);
+
+
+
+            }
+        }
+
+
         public class Users
         {
             string name;
