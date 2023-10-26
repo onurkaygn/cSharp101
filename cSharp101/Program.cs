@@ -135,105 +135,100 @@ namespace cSharp101
 
 
             //Koleksiyonlar
-           /* List<int> numberList = new List<int>();
-            
-            numberList.Add(1);
-            numberList.Add(3);
-            numberList.Add(5);
-            numberList.Add(2);
+            /* List<int> numberList = new List<int>();
+
+             numberList.Add(1);
+             numberList.Add(3);
+             numberList.Add(5);
+             numberList.Add(2);
 
 
-            List<string> colorList = new List<string>();
+             List<string> colorList = new List<string>();
 
-            colorList.Add("Black");
-            colorList.Add("Yellow");
-            colorList.Add("Red");
-            colorList.Add("Green");
-            colorList.Add("Blue");
-            colorList.Add("Orange");
-            colorList.Add("Salmon");
+             colorList.Add("Black");
+             colorList.Add("Yellow");
+             colorList.Add("Red");
+             colorList.Add("Green");
+             colorList.Add("Blue");
+             colorList.Add("Orange");
+             colorList.Add("Salmon");
 
-            Console.WriteLine(numberList.Count());
-            Console.WriteLine(colorList.Count());
-
-           
-            numberList.Remove(5);
-            colorList.RemoveAt(3);
-            foreach (var color in colorList)
-            {
-                Console.WriteLine(color);
-            }
-            numberList.ForEach(number => Console.WriteLine(number));
-
-            if(colorList.Contains("Yellow"))
-            {
-                Console.WriteLine("Yellow found!");
-            }
-
-            Console.WriteLine(numberList.BinarySearch(3));
-
-            string[] animals = { "Cat", "Dog", "Bird" };
-
-            List<string> animalList = new List<string>(animals);
-            Console.WriteLine(animalList[1]);
-
-            List<Users> userList = new List<Users>();
-            Users user1 = new Users();
-            user1.Name = "user1sName";
-            user1.Surname = "user1sSurname";
-            user1.Age = 21;
-
-            Users user2 = new Users();
-            user2.Name = "user2sName";
-            user2.Surname = "user2sSurname";
-            user2.Age = 20;
-
-            userList.Add(user1);
-            userList.Add(user2);
-
-            List<Users> newUserList = new List<Users>();
-
-            newUserList.Add(new Users()
-            {
-                Name = "newName",
-                Surname = "newSurname",
-                Age = 22
-            });
-
-            foreach(Users user in userList)
-            {
-                Console.WriteLine(user.Name);
-            }
-
-            ArrayList list = new ArrayList();
-            list.Add("Ayşe");
-            list.Add(5);
-            list.Add(false);
-            list.Add('a');
-
-            Dictionary<string,string> employers = new Dictionary<string,string>();
-
-            employers.Add("C#", "Ali");
-            employers.Add("Swift", "Ahmet");
-            employers.Add("Angular", "Nur");
-            Console.WriteLine(employers["Angular"]); */
+             Console.WriteLine(numberList.Count());
+             Console.WriteLine(colorList.Count());
 
 
-            Employees employee1 = new Employees();
+             numberList.Remove(5);
+             colorList.RemoveAt(3);
+             foreach (var color in colorList)
+             {
+                 Console.WriteLine(color);
+             }
+             numberList.ForEach(number => Console.WriteLine(number));
 
-            employee1.name = "TestName0";
-            employee1.surname = "TestSurname0";
-            employee1.id = 0;
-            employee1.department = "TestDepartment0";
+             if(colorList.Contains("Yellow"))
+             {
+                 Console.WriteLine("Yellow found!");
+             }
 
-            Employees employee2 = new Employees();
+             Console.WriteLine(numberList.BinarySearch(3));
 
-            employee2.name = "TestName1";
-            employee2.surname = "TestSurname1";
-            employee2.id = 1;
-            employee2.department = "TestDepartment1";
+             string[] animals = { "Cat", "Dog", "Bird" };
 
-            employee1.EmployeeInffo();
+             List<string> animalList = new List<string>(animals);
+             Console.WriteLine(animalList[1]);
+
+             List<Users> userList = new List<Users>();
+             Users user1 = new Users();
+             user1.Name = "user1sName";
+             user1.Surname = "user1sSurname";
+             user1.Age = 21;
+
+             Users user2 = new Users();
+             user2.Name = "user2sName";
+             user2.Surname = "user2sSurname";
+             user2.Age = 20;
+
+             userList.Add(user1);
+             userList.Add(user2);
+
+             List<Users> newUserList = new List<Users>();
+
+             newUserList.Add(new Users()
+             {
+                 Name = "newName",
+                 Surname = "newSurname",
+                 Age = 22
+             });
+
+             foreach(Users user in userList)
+             {
+                 Console.WriteLine(user.Name);
+             }
+
+             ArrayList list = new ArrayList();
+             list.Add("Ayşe");
+             list.Add(5);
+             list.Add(false);
+             list.Add('a');
+
+             Dictionary<string,string> employers = new Dictionary<string,string>();
+
+             employers.Add("C#", "Ali");
+             employers.Add("Swift", "Ahmet");
+             employers.Add("Angular", "Nur");
+             Console.WriteLine(employers["Angular"]); */
+
+
+            Employees employee1 = new Employees("TestName1","TestSurname1",1,"TestDeparment1");
+            Employees employee2 = new Employees("TestName2", "TestSurname2", 2, "TestDeparment2",1500);
+
+
+
+
+
+            employee1.EmployeeInfo();
+          
+
 
 
 
@@ -244,22 +239,53 @@ namespace cSharp101
 
         class Employees
         {
-            public string name;
-            public string surname;
-            public int id;
-            public string department;
+            public string Name;
+            public string Surname;
+            public int ID;
+            public string Department;
+            public int Raise;
 
-            public void EmployeeInffo()
+            public Employees(string name, string surname, int id, string department,int raise) { 
+                Name = name;
+                Surname = surname;
+                ID = id;
+                Department = department; 
+                Raise = raise;
+            }
+            public Employees(string name, string surname, int id, string department)
             {
-                Console.WriteLine("Employee Name: {0}",name);
-                Console.WriteLine("Employee Surname: {0}", surname);
-                Console.WriteLine("Employee ID: {0}", id);
-                Console.WriteLine("Employee Department: {0}", department);
+                this.Name = name;
+                this.Surname = surname;
+                ID = id;
+                Department = department;
+
+            }
+
+            public Employees() { }
+
+            public void EmployeeInfo()
+            {
+                Console.WriteLine("Employee Name: {0}",Name);
+                Console.WriteLine("Employee Surname: {0}", Surname);
+                Console.WriteLine("Employee ID: {0}", ID);
+                Console.WriteLine("Employee Department: {0}", Department);
+
+                if(Raise == 0)
+                {
+                    Console.WriteLine("{0}'s salary did not increase", Name);
+                }
+                else
+                {
+                    Console.WriteLine("Employee's Raise : {0}", Raise);
+                }
+
 
 
 
             }
         }
+
+
 
 
         public class Users
