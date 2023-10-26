@@ -219,25 +219,85 @@ namespace cSharp101
              Console.WriteLine(employers["Angular"]); */
 
 
-            Employees employee1 = new Employees("TestName1","TestSurname1",1,"TestDeparment1");
-            Employees employee2 = new Employees("TestName2", "TestSurname2", 2, "TestDeparment2",1500);
-
-
-
-
+            /* Employees employee1 = new Employees("TestName1","TestSurname1",1,"TestDeparment1",1500);
+            Employees employee2 = new Employees("TestName2", "TestSurname2", 2, "TestDeparment2");
 
             employee1.EmployeeInfo();
-          
+            employee2.EmployeeInfo(); */
 
+
+            Student student1 = new Student();
+            student1.Name = "TestName";
+            student1.Surname = "TestSurname";
+            student1.Id = 1;
+            student1.Grade = 2;
+            student1.StudentInfo();
+            student1.IncreaseGrade();
+            student1.StudentInfo();
 
 
 
 
         }
 
+        class Student
+        {
+            private string name;
+            private string surname;
+            private int id;
+            private int grade;
+
+            public string Name {
+                get { return name; }
+                set { name = value; }
+            }
+
+            public string Surname { get => surname; set => surname = value; }
+            public int Id { get => id; set => id = value; }
+            public int Grade { get => grade; set => grade = value; }
+
+            public Student(string name, string surname, int id, int grade)
+            {
+                this.name = name;
+                this.surname = surname;
+                this.id = id;
+                this.grade = grade;
+            }
+            public Student(){}
+
+            public void StudentInfo()
+            {
+                Console.WriteLine("-------------STUDENT'S INFO-------------");
+                Console.WriteLine("Name:    {0}",this.Name);
+                Console.WriteLine("Surname: {0}",this.Surname);
+                Console.WriteLine("ID:      {0}", this.Id);
+                Console.WriteLine("Grade:   {0}", this.Grade);
+            }
+            public void IncreaseGrade()
+            {
+                this.Grade += 1;
+            }
+            public void DecreaseGrade()
+            {
+                this.Grade -= 1;
+            }
+
+        }
 
 
-        class Employees
+
+
+    }
+
+
+
+
+
+
+
+
+        
+       /* class Employees
         {
             public string Name;
             public string Surname;
@@ -312,12 +372,12 @@ namespace cSharp101
 
             }
 
-        }
+        } */
     }
 
 
 
 
 
-    }
+    
     
