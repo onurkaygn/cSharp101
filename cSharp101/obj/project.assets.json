@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\onuralpkaygin\\.nuget\\packages\\": {}
+    "C:\\Users\\onura\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\onuralpkaygin\\Desktop\\cSharp101\\cSharp101\\cSharp101.csproj",
+      "projectUniqueName": "C:\\Users\\onura\\Source\\Repos\\cSharp101\\cSharp101\\cSharp101.csproj",
       "projectName": "cSharp101",
-      "projectPath": "C:\\Users\\onuralpkaygin\\Desktop\\cSharp101\\cSharp101\\cSharp101.csproj",
-      "packagesPath": "C:\\Users\\onuralpkaygin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\onuralpkaygin\\Desktop\\cSharp101\\cSharp101\\obj\\",
+      "projectPath": "C:\\Users\\onura\\Source\\Repos\\cSharp101\\cSharp101\\cSharp101.csproj",
+      "packagesPath": "C:\\Users\\onura\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\onura\\Source\\Repos\\cSharp101\\cSharp101\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\onuralpkaygin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\onura\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
