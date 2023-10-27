@@ -132,11 +132,11 @@ namespace cSharp101
             Console.WriteLine(powerCalc.Expo(7, 2));
 
             //String Metodları
-            */
+           
 
 
             //Koleksiyonlar
-            /* List<int> numberList = new List<int>();
+             List<int> numberList = new List<int>();
 
              numberList.Add(1);
              numberList.Add(3);
@@ -217,33 +217,101 @@ namespace cSharp101
              employers.Add("C#", "Ali");
              employers.Add("Swift", "Ahmet");
              employers.Add("Angular", "Nur");
-             Console.WriteLine(employers["Angular"]); */
+             Console.WriteLine(employers["Angular"]); 
 
 
-            /* Employees employee1 = new Employees("TestName1","TestSurname1",1,"TestDeparment1",1500);
+             Employees employee1 = new Employees("TestName1","TestSurname1",1,"TestDeparment1",1500);
             Employees employee2 = new Employees("TestName2", "TestSurname2", 2, "TestDeparment2");
 
             employee1.EmployeeInfo();
-            employee2.EmployeeInfo(); */
+            employee2.EmployeeInfo(); 
 
 
-            /*  Student student1 = new Student();
+           Student student1 = new Student();
               student1.Name = "TestName";
               student1.Surname = "TestSurname";
               student1.Id = 1;
               student1.Grade = 2;
               student1.StudentInfo();
               student1.IncreaseGrade();
-              student1.StudentInfo(); */
+              student1.StudentInfo(); 
 
 
-            Console.WriteLine(Car.hp); 
+             Console.WriteLine(Car.hp); //Static olan preopertielere obje oluşturmadan erişebiliriz.
+            Console.Read(); */
+
+            RectangleClass rectangleClass = new RectangleClass();
+            rectangleClass.ShortSide = 10;
+            rectangleClass.LongSide = 20;
+            Console.WriteLine(rectangleClass.FieldMeasurement());
+
+            RectangleStruct rectangleStruct = new RectangleStruct(3,5);
+            Console.WriteLine(rectangleStruct.FieldMeasurement());
+
             Console.Read();
-
 
         }
 
-        class Car
+
+        class RectangleClass
+        {
+            public int ShortSide;
+            public int LongSide;
+
+            public long FieldMeasurement()
+            {
+                return this.ShortSide * this.LongSide;
+            }
+
+            public RectangleClass()
+            {
+                ShortSide = 3;
+                LongSide = 5;
+            }
+
+        }
+
+        struct RectangleStruct
+        {
+            public int ShortSide;
+            public int LongSide;
+
+            public long FieldMeasurement()
+            {
+                return this.ShortSide * this.LongSide;
+            }
+            public RectangleStruct(int shortside, int longside)
+            {
+                this.ShortSide = shortside;
+                this.LongSide = longside;
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*class Car
         {
             private static int Hp;
             public static int hp { get => Hp; set => Hp = value; }
@@ -257,7 +325,8 @@ namespace cSharp101
             public Car(string brand) { 
                 this.Brand = brand;
             }
-        }
+        */
+    
 
 
 
