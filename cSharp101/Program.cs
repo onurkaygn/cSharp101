@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Runtime.CompilerServices;
 
 namespace cSharp101
 {
@@ -226,21 +227,48 @@ namespace cSharp101
             employee2.EmployeeInfo(); */
 
 
-            Student student1 = new Student();
-            student1.Name = "TestName";
-            student1.Surname = "TestSurname";
-            student1.Id = 1;
-            student1.Grade = 2;
-            student1.StudentInfo();
-            student1.IncreaseGrade();
-            student1.StudentInfo();
+            /*  Student student1 = new Student();
+              student1.Name = "TestName";
+              student1.Surname = "TestSurname";
+              student1.Id = 1;
+              student1.Grade = 2;
+              student1.StudentInfo();
+              student1.IncreaseGrade();
+              student1.StudentInfo(); */
 
 
+            Console.WriteLine(Car.hp); 
+            Console.Read();
 
 
         }
 
-        class Student
+        class Car
+        {
+            private static int Hp;
+            public static int hp { get => Hp; set => Hp = value; }
+            private string Brand;
+
+            static Car()
+            {
+                Hp = 75;
+                Console.WriteLine(Hp);
+            }
+            public Car(string brand) { 
+                this.Brand = brand;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+       /* class Student
         {
             private string name;
             private string surname;
@@ -282,7 +310,7 @@ namespace cSharp101
                 this.Grade -= 1;
             }
 
-        }
+        } */
 
 
 

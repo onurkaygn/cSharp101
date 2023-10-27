@@ -12,3 +12,17 @@ C:\Users\onuralpkaygin\Desktop\cSharp101\cSharp101\obj\Debug\net7.0\refint\cShar
 C:\Users\onuralpkaygin\Desktop\cSharp101\cSharp101\obj\Debug\net7.0\cSharp101.pdb
 C:\Users\onuralpkaygin\Desktop\cSharp101\cSharp101\obj\Debug\net7.0\cSharp101.genruntimeconfig.cache
 C:\Users\onuralpkaygin\Desktop\cSharp101\cSharp101\obj\Debug\net7.0\ref\cSharp101.dll
+C:\Users\onura\source\repos\cSharp101\cSharp101\bin\Debug\net7.0\cSharp101.exe
+C:\Users\onura\source\repos\cSharp101\cSharp101\bin\Debug\net7.0\cSharp101.deps.json
+C:\Users\onura\source\repos\cSharp101\cSharp101\bin\Debug\net7.0\cSharp101.runtimeconfig.json
+C:\Users\onura\source\repos\cSharp101\cSharp101\bin\Debug\net7.0\cSharp101.dll
+C:\Users\onura\source\repos\cSharp101\cSharp101\bin\Debug\net7.0\cSharp101.pdb
+C:\Users\onura\source\repos\cSharp101\cSharp101\obj\Debug\net7.0\cSharp101.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\onura\source\repos\cSharp101\cSharp101\obj\Debug\net7.0\cSharp101.AssemblyInfoInputs.cache
+C:\Users\onura\source\repos\cSharp101\cSharp101\obj\Debug\net7.0\cSharp101.AssemblyInfo.cs
+C:\Users\onura\source\repos\cSharp101\cSharp101\obj\Debug\net7.0\cSharp101.csproj.CoreCompileInputs.cache
+C:\Users\onura\source\repos\cSharp101\cSharp101\obj\Debug\net7.0\cSharp101.dll
+C:\Users\onura\source\repos\cSharp101\cSharp101\obj\Debug\net7.0\refint\cSharp101.dll
+C:\Users\onura\source\repos\cSharp101\cSharp101\obj\Debug\net7.0\cSharp101.pdb
+C:\Users\onura\source\repos\cSharp101\cSharp101\obj\Debug\net7.0\cSharp101.genruntimeconfig.cache
+C:\Users\onura\source\repos\cSharp101\cSharp101\obj\Debug\net7.0\ref\cSharp101.dll
