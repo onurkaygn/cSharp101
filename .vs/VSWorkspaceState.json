@@ -1,7 +1,16 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\cSharp101",
+    "\\cSharp101\\bin",
+    "\\cSharp101\\bin\\Debug",
+    "\\cSharp101\\bin\\Debug\\net7.0",
+    "\\cSharp101\\bin\\Release",
+    "\\cSharp101\\obj",
+    "\\cSharp101\\obj\\Debug",
+    "\\cSharp101\\obj\\Release",
+    "\\cSharp101\\obj\\Release\\net7.0"
   ],
-  "SelectedNode": "\\cSharp101.sln",
+  "SelectedNode": "\\cSharp101",
   "PreviewInSolutionExplorer": false
 }

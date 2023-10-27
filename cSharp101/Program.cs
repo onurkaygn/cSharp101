@@ -238,7 +238,7 @@ namespace cSharp101
 
 
              Console.WriteLine(Car.hp); //Static olan preopertielere obje oluşturmadan erişebiliriz.
-            Console.Read(); */
+            Console.Read();
 
             RectangleClass rectangleClass = new RectangleClass();
             rectangleClass.ShortSide = 10;
@@ -246,12 +246,22 @@ namespace cSharp101
             Console.WriteLine(rectangleClass.FieldMeasurement());
 
             RectangleStruct rectangleStruct = new RectangleStruct(3,5);
-            Console.WriteLine(rectangleStruct.FieldMeasurement());
+            Console.WriteLine(rectangleStruct.FieldMeasurement());  */
+
+            Console.WriteLine(Languages.Spanish);
 
             Console.Read();
 
         }
 
+        enum Languages
+        {
+            Turkish,
+            English,
+            Spanish,
+            French,
+            Italian
+        }
 
         class RectangleClass
         {
